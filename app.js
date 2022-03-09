@@ -57,7 +57,7 @@
          <div class="results-item">
              <a href="https://en.wikipedia.org/?curid=${result.pageId}" target="_blank" class="card animated bounceInUp">
                  <h2 class="results-item-title">${result.title}</h2>
-                  <p class="results-item-intro">${result.intro}</p> 
+                <p class="results-item-intro">${result.intro}</p> 
              </a>
          </div>
      `;
@@ -70,7 +70,8 @@
          title: page.title,
          intro: page.extract,
      }));
- 
+
+     console.log(results);
      showResults(results);
  };
  
